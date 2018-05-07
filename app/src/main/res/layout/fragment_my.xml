@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:collapsedTitleGravity="center"
+            app:contentScrim="@mipmap/my_top"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:contentInsetLeft="0dp"
+                app:contentInsetStart="0dp"
+                app:layout_collapseMode="pin"
+                app:titleTextAppearance="@style/ToolBar" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/my_top_bg"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_avtor"
+                    android:layout_width="@dimen/t40dp"
+                    android:layout_height="@dimen/t40dp"
+                    android:layout_marginTop="@dimen/t10dp"
+                    android:src="@mipmap/default_avtor" />
+
+                <TextView
+                    android:id="@+id/tv_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t8dp"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t5dp"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F5F5F5"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <aiqiyi.yc.com.my.ui.widget.BaseSettingView
+            android:id="@+id/baseSettingView_share"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:icon="@mipmap/share"
+            app:show_extra="false"
+            app:title="分享好友" />
+
+        <aiqiyi.yc.com.my.ui.widget.BaseSettingView
+            android:id="@+id/baseSettingView_accounts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/t10dp"
+            app:icon="@mipmap/setting_wx"
+            app:show_extra="false"
+            app:title="关注公众号" />
+
+        <aiqiyi.yc.com.my.ui.widget.BaseSettingView
+            android:id="@+id/baseSettingView_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/t10dp"
+            app:icon="@mipmap/setting"
+            app:show_extra="false"
+            app:title="系统设置" />
+
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

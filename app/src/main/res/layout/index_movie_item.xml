@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/t5dp"
+    app:cardElevation="@dimen/t5dp">
+    <!--android:background="@drawable/movie_item_bg"-->
+    <!--android:elevation="@dimen/t5dp"-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/t15dp">
+
+        <ImageView
+            android:id="@+id/iv_cover"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/t5dp">
+
+            <TextView
+                android:id="@+id/tv_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="8.9"
+                android:textColor="#ff722c" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/t5dp"
+                android:layout_toLeftOf="@id/tv_score"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="杀破狼"
+                android:textColor="@color/black_333" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_actor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="主演：古天乐吴樾"
+            android:textColor="@color/black_333" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

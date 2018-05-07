@@ -1,0 +1,32 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="ToolBar" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--登录输入框-->
+    <style name="LoginEditTextInputStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">@color/pink_dea8a8</item>
+        <item name="android:textColorHint">@color/pink_dea8a8</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@null</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="ToolBar.style">
+        <item name="android:textSize">@dimen/t14sp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsingToolbarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/red_f14343"
+                android:paddingTop="@dimen/t10dp"
+                app:layout_collapseMode="pin"
+                app:navigationIcon="@mipmap/back">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="上传信息"
+
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/t14sp" />
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <EditText
+            android:id="@+id/et_publish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="start"
+            android:hint="请输入要发表的文字"
+            android:minHeight="@dimen/t100dp"
+            android:padding="@dimen/t10dp"
+            android:textColorHint="@color/gray_bfbfbf"
+            android:textSize="@dimen/t14sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/t10dp" />
+
+        <TextView
+            android:id="@+id/tv_publish"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/t40dp"
+            android:layout_marginLeft="@dimen/t50dp"
+            android:layout_marginRight="@dimen/t50dp"
+            android:background="@drawable/btn_red_bg"
+            android:gravity="center"
+            android:text="发表"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16" />
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

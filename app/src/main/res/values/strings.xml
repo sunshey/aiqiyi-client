@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Aiqiyi</string>
+    <string name="main_index">首页</string>
+    <string name="main_collect">论坛</string>
+    <string name="main_my">我的</string>
+    <string name="play">播放</string>
+    <string name="movie_name">片名：%1$s</string>
+    <string name="movie_director">导演：%1$s</string>
+    <string name="movie_place">地区：%1$s</string>
+    <string name="movie_type">类型：%1$s</string>
+    <string name="movie_introduce">剧情介绍：%1$s</string>
+    <string name="cancel">取消</string>
+    <string name="setting">设置</string>
+    <string name="register">注册</string>
+    <string-array name="forum">
+        <item>全部</item>
+        <item>关注</item>
+    </string-array>
+    <string-array name="photo_item">
+        <item>相册</item>
+        <item>拍照</item>
+    </string-array>
+
+</resources>

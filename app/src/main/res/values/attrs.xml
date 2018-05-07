@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="BaseBottomTab">
+        <attr name="select_icon" format="reference" />
+        <attr name="unselect_icon" format="reference" />
+        <attr name="tab_title" format="string" />
+        <attr name="select_textColor" format="color" />
+        <attr name="unselect_textColor" format="color" />
+        <attr name="select" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="BaseSettingView">
+        <attr name="icon" format="reference" />
+        <attr name="title" format="string" />
+        <attr name="titleSize" format="dimension" />
+        <attr name="show_extra" format="boolean" />
+
+    </declare-styleable>
+
+</resources>
