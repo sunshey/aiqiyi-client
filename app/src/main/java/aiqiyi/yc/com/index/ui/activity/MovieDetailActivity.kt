@@ -22,12 +22,17 @@ class MovieDetailActivity : BaseActivity<MovieDetailPresenter>(), MovieDetailCon
 
     override fun init() {
         mPresenter = MovieDetailPresenter(this, this)
+
         movieId = intent.getIntExtra("id", 0)
+        toolbar.title = ""
+        setSupportActionBar(toolbar)
+        toolbar.setNavigationOnClickListener { finish() }
         getData()
     }
 
     override fun showMovieDetail(data: MovieDetailInfo?) {
         tv_name.text = String.format(getString(R.string.movie_name), data!!.movieName)
+        tv_top_title.text = data.movieName
         tv_actor.text = data.actor
         tv_place.text = String.format(getString(R.string.movie_place), data.place)
         tv_type.text = String.format(getString(R.string.movie_type), data.type)
