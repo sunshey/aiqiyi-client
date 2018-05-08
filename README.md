@@ -70,5 +70,9 @@ dependencies {
 5. 注册、修改手机号等功能需要验证码，这里集成了mob框架，不过没有付费的用户每天只能发送5次验证码
 6. 版本更新集成腾讯buly框架，简单、方便、功能强大
 7. 底部导航栏使用bottom-navigation-bar，Google出品，具有强大的动画效果，展示优美
-8. 其他使用的库有FloatActionButton,Cardview...
+8. 其他使用的库有FloatActionButton,Cardview,Tablayout ...
+
+写在最后
+---
+   **通过这段时间的开发，越发觉得Android知识体系的博大精深，很多知识用到时才发现这也不会，那也不会，只好现学现用，这大大降低开发的效率，所以以后要更加努力学习，完善自己的Android知识体系，套用毛主席的一句话 "革命尚未成功，同志仍需努力!"**:fist::fist::fist:
 
