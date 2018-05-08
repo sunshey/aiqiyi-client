@@ -56,9 +56,19 @@ dependencies {
             //it 代表view
             finish() }
  ```
- 如果只有一个缺省参数，缺省参数用it来代替
+ 如果只有一个缺省参数，缺省参数用it来代替  
+ **我所知道的用法就是这些，等以后学了新的知识再来补充**:stuck_out_tongue_winking_eye:
 
 
 技术总结
 ---
-* kotlin
+项目中使用了一些第三方库，以及Android5.0Materia新特性,大部分都是Android相关的技术
+1. 项目采用mvvp设计模式，将界面、逻辑、数据层分开，通过集成base模块搭建主框架
+2. 项目中网络请求使用okhttp,这得益于凯哥封装的securityhttp，里面集成了网络请求、rxjava让网络请求变得异常简单
+3. 图片加载使用glide框架，相对于其他的加载框架，它具有加载时节省内存、加载动图、长图等其他矿建所不具有的优势
+4. 列表展示使用recyclerview加上BaseRecyclerViewAdapterHelper，网络上封装的这个库减少了新建adapter时的代码，同时支持上拉加载更多
+5. 注册、修改手机号等功能需要验证码，这里集成了mob框架，不过没有付费的用户每天只能发送5次验证码
+6. 版本更新集成腾讯buly框架，简单、方便、功能强大
+7. 底部导航栏使用bottom-navigation-bar，Google出品，具有强大的动画效果，展示优美
+8. 其他使用的库有FloatActionButton,Cardview...
+
