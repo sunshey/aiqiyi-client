@@ -42,7 +42,7 @@ dependencies {
 6. kotlin中需要使用某个类时比如跳转到TestActivity,使用类名是TestActivity::class.java,和Java略有不同，在activity某个匿名方法中使用this，表示方式是this@TestActivity
 7. 所有方法的关键字都是fun,如果有返回值，直接在方法后面加 :和返回类型
 8. 如果使用了recyclerview，添加adapter时需要有数据且不为空，否则直接会报空指针，不知道是我使用的不对，还是kotlin就是这样的用法:blush:
-9. kotlin中可以使用$符号将非string类型的对象转换成string，比如 var a = 0  var c ="$movieId" 或者 var c ="${movieId}",加大括号用在非单一类型的对象 如 person类等
+9. kotlin中可以使用$符号将非string类型的对象转换成string，比如 var movieId = 0  var c ="$movieId" 或者 var c ="${movieId}",加大括号用在非单一类型的对象 如 person类等
 10. kotlin中语法糖就是lambda表达式，这样可以让代码更好看，比如：
 ```
  indexMovieAdapter!!.setOnItemClickListener { _, _, position ->
