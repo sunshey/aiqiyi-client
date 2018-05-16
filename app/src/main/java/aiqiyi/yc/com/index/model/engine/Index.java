@@ -29,10 +29,11 @@ public class Index extends BaseEngine {
         super(context);
     }
 
-    public Observable<ResultInfo<List<MovieInfo>>> getMovieInfoList(int page, int limit) {
+    public Observable<ResultInfo<List<MovieInfo>>> getMovieInfoList(int page, int limit, int type) {
         Map<String, String> params = new HashMap<>();
         params.put("page", page + "");
         params.put("limit", limit + "");
+        params.put("type", type + "");
         return HttpCoreEngin.get(mContext).rxpost(NetConstant.Companion.getIndex_url(), new TypeReference<ResultInfo<List<MovieInfo>>>() {
         }.getType(), params, false, false, false);
 

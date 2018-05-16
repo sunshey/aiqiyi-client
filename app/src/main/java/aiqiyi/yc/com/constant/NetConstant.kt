@@ -10,6 +10,9 @@ class NetConstant {
     companion object {
         //http://192.168.80.92:8080/movielist/1/10
         val base_url = "http://172.24.27.1:8080/"
+
+        //https接口地址，目前证书验证失败，不能访问
+//        val base_url = "https://172.24.27.1:8081/"
         /**
          * 首页
          */

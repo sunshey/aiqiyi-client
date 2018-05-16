@@ -21,4 +21,24 @@
         <item>拍照</item>
     </string-array>
 
+    <string-array name="movie_type">
+        <item>喜剧</item>
+        <item>悲剧</item>
+        <item>爱情</item>
+        <item>动作</item>
+        <item>枪战</item>
+        <item>犯罪</item>
+        <item>惊悚</item>
+        <item>恐怖</item>
+        <item>悬疑</item>
+        <item>动画</item>
+        <item>家庭</item>
+        <item>奇幻</item>
+        <item>魔幻</item>
+        <item>科幻</item>
+        <item>战争</item>
+        <item>青春</item>
+        <item>免费</item>
+    </string-array>
+
 </resources>

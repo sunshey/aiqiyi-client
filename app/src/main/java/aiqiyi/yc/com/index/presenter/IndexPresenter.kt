@@ -26,8 +26,8 @@ class IndexPresenter(context: Context?, view: IndexContract.View?) : BasePresent
 //        getMovieList(1, 15)
     }
 
-    fun getMovieList(page: Int, limit: Int) {
-        val subscription = mEngine.getMovieInfoList(page, limit).subscribe(object : Subscriber<ResultInfo<List<MovieInfo>>>() {
+    fun getMovieList(page: Int, limit: Int, type: Int) {
+        val subscription = mEngine.getMovieInfoList(page, limit, type).subscribe(object : Subscriber<ResultInfo<List<MovieInfo>>>() {
             override fun onCompleted() {
             }
 
@@ -35,7 +35,7 @@ class IndexPresenter(context: Context?, view: IndexContract.View?) : BasePresent
             }
 
             override fun onNext(t: ResultInfo<List<MovieInfo>>?) {
-                if (t!!.code==HttpConfig.STATUS_OK&&t.data!=null){
+                if (t!!.code == HttpConfig.STATUS_OK && t.data != null) {
 //                    LogUtil.msg("数据：——>"+t.data)
                     mView.showMovieList(t.data)
                 }

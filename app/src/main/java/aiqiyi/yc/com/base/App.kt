@@ -28,7 +28,7 @@ class App : MultiDexApplication() {
 //        GoagalInfo.get().init(this)
         MobSDK.init(this)
         UserInfoHelper.login(this)
-        Bugly.init(this, "a2e3a99246", false);
+        Bugly.init(this, "a2e3a99246", false)
         //设置http默认参数
         val params = HashMap<String, String>()
         params.put("imeil", GoagalInfo.get().getUid(this))
